@@ -8,6 +8,5 @@ docker run -d \
   -p 8086:8086 \
     -p 8090:8090 \
     -p  8099:8099 \
-    -v $PWD/config.toml:/opt/influxdb/shared/config.toml \
-  -v /data/influxdb:/opt/influxdb/shared/data \
-  --name influxdb torkelo/influxdb
+    -v $PWD/run.sh:/run.sh \
+  --name influxdb vish/k8s_influxdb
