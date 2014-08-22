@@ -20,6 +20,14 @@
 	"env": [{"name": HTTP_USER, "value": admin},	
 		{"name": HTTP_PASS, "value": admin}],
       }]
+    }, {	
+	"name": "elasticsearch",
+        "image": "vish/dockerfile/elasticsearch",
+        "ports": [{"containerPort": 9200, "hostPort": 9200},
+		  {"containerPort": 9300, "hostPort": 9300}],
+	"env": [{"name": HTTP_USER, "value": admin},	
+		{"name": HTTP_PASS, "value": admin}],
+      }]
     }
   },
   "labels": {
